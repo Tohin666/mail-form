@@ -7,6 +7,12 @@ formElem.onsubmit = async (e) => {
         method: 'POST',
         body: new FormData(formElem)
     })
-        .then(response => console.log(response))
-        .catch(error => console.log(error));
+        .then(response => response.json())
+        .then(json => {
+            // const message = json['success'] ? 'Mail sent!' : 'Something wrong!';
+            const messageElem = document.getElementById('status');
+            messageElem.textContent = json['status'];
+            // messageElem.textContent = message;
+            formElem.after(messageElem);
+        });
 };
