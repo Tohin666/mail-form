@@ -15,7 +15,6 @@ if (isset($_POST['email']) && isset($_POST['message'])) {
 
         $status = $isMailSent ? 'Mail sent!' : 'Mail is not sent!';
         echo json_encode(['status' => $status]);
-//      echo json_encode(['success' => $isMailSent]);
 
     } else {
         echo json_encode(['status' => 'Email address is incorrect!']);

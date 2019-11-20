@@ -9,10 +9,8 @@ formElem.onsubmit = async (e) => {
     })
         .then(response => response.json())
         .then(json => {
-            // const message = json['success'] ? 'Mail sent!' : 'Something wrong!';
             const messageElem = document.getElementById('status');
             messageElem.textContent = json['status'];
-            // messageElem.textContent = message;
             formElem.after(messageElem);
         });
 };

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "lastName": "Иванов",
+    "firstName": "Иван",
+    "MiddleName": "Иванович",
+    "age": "53",
+    "profession": "слесарь"
+  },
+  {
+    "id": 2,
+    "lastName": "Петров",
+    "firstName": "Павел",
+    "MiddleName": "Геннадиевич",
+    "age": "35",
+    "profession": "бухгалтер"
+  },
+  {
+    "id": 3,
+    "lastName": "Пупкин",
+    "firstName": "Василий",
+    "MiddleName": "Иванович",
+    "age": "45",
+    "profession": "руководитель"
+  }
+]
